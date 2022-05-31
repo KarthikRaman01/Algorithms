@@ -18,6 +18,10 @@ We can convert recursive solutions into iterative solutions and vice versa
 Space Complexity --> Not constant because of the function calls in stack. (O(N))
 
 How to study/code using recursion?
+Try to draw Recurrence Tree
+Try to come up with the recurrence relation
+
+
 
 
 

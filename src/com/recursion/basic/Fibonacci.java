@@ -1,5 +1,7 @@
 package com.recursion.basic;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Fibonacci {
@@ -10,6 +12,8 @@ public class Fibonacci {
 		System.out.println(num + " th fibonacci number is: " + fibonacci(num - 1));
 		System.out.println("Printing all the fibonacci numbers: ");
 		printFibonacci(num);
+		System.out.println("");
+		System.out.println(num + " th fibonacci number through iterative process is: " + fibonacciIterative(num));
 
 	}
 
@@ -29,6 +33,23 @@ public class Fibonacci {
 				System.out.print(fibonacci(i));
 			}
 		}
+	}
+	
+	public static int fibonacciIterative(int number) {
+		if (number <= 0 || number == 1) {
+			return number;
+		}
+		
+		List<Integer> fibNumbers = new ArrayList<Integer>();
+		fibNumbers.add(0, 0);
+		fibNumbers.add(1, 1);
+		
+		for(int i=2; i<=number; i++) {
+			int value = fibNumbers.get(i-1) + fibNumbers.get(i-2);
+			fibNumbers.add(i, value);
+		}
+		
+		return fibNumbers.get(number);
 	}
 
 }
