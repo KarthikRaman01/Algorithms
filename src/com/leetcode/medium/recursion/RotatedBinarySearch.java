@@ -1,4 +1,4 @@
-package com.recursion.medium.leetcode;
+package com.leetcode.medium.recursion;
 
 public class RotatedBinarySearch {
 
