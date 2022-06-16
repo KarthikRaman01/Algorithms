@@ -1,4 +1,4 @@
-package com.leetcode.medium.recursion;
+package com.leetcode.recursion.medium;
 
 /**
  * still needs work
