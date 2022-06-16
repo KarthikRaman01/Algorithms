@@ -1,0 +1,6 @@
+Convert character to Ascii
+
+Add 0 to the character like below
+char ch = 'a';
+Integer ascii = ch + 0;
+
