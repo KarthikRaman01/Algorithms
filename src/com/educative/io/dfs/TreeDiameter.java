@@ -49,10 +49,7 @@ public class TreeDiameter {
 
 		int leftDepth = maxDepth(root.left, occurence + 1);
 		int rightDepth = maxDepth(root.right, occurence + 1);
-		if (leftDepth > rightDepth) {
-			return leftDepth;
-		}
-		return rightDepth;
+		return Math.max(leftDepth, rightDepth);
 	}
 	
 	private static int calculateHeight(TreeNode currentNode) {
